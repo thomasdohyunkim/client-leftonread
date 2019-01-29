@@ -1,0 +1,75 @@
+$pink: #FD7EA3;
+$white: #FFF3F7;
+$blue: #DEF8FF;
+$green: #91D7CD;
+
+@font-face {
+  font-family: "Gothvetica";
+  src: url("../fonts/Gothvetica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Simplifica";
+  src: url("../fonts/Simplifica.ttf") format("truetype");
+}
+
+.div-button {
+  outline: 0;
+  outline: none;
+}
+
+.link-animated {
+  display: inline-block;
+  outline: 0;
+  outline: none;
+}
+
+.link-animated:hover {
+  cursor: pointer;
+}
+
+.link-animated:after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+
+.link-animated:hover:after {
+  width: 100%;
+}
+
+.action-button {
+  height: 8vh;
+  width: 11vw;
+  font-size: 3.5vh;
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid #D3D3D3;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  align-self: center;
+  outline: 0;
+  outline: none;
+}
+
+.action-button:hover {
+  cursor: pointer;
+}
+
+.action-button:disabled {
+  opacity: 0.5;
+  background-color: grey;
+}
+
+.action-button:disabled:hover {
+  opacity: 0.5;
+  background-color: grey;
+}
+
+.core-title-logo {
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 55px;
+}

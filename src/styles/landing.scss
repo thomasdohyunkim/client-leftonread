@@ -1,0 +1,569 @@
+$iMessageBlueLogoColor: #3399ff;
+$iMessageGrayTextColor: #999999;
+$iMessageDarkBlueLogoColor: #006699;
+$iMessageWhiteLogoColor: #ccffff;
+$textGreenColor: #4DE52E;
+$textBackgroundColor: #ffffff;
+$textDarkGreyColor: rgb(88, 88, 88);
+$textMediumGreyColor: rgb(158, 158, 158);
+$textLightGreyColor: rgb(228, 228, 228);
+$NavLinkColor: rgb(66, 66, 66);
+
+$newBlueLogoColor: #8CD1C6;
+$newPinkLogoColor: #ffaec6;
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Lato');
+}
+
+body, html {
+  background: $textBackgroundColor;
+  height: 100%;
+  margin: 0%;
+}
+
+nav {
+  background-color: $iMessageGrayTextColor;
+
+  ul {
+    margin: 0;
+    padding-top: 10px;
+
+  }
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// .landing-section {
+//   height: 100%;
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+.main-bubble {
+  // align-self: center;
+  // background-image: url('../img/messagebubble.svg');
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // flex-grow: 1;
+  width: 100%;
+  background: linear-gradient($newBlueLogoColor, $newPinkLogoColor);
+  padding: 0px 0px 100px 0px
+}
+
+.main-bubble:after {
+  content: "beta";
+  position: absolute;
+  width: 80px;
+  height: 25px;
+  background: #ff0000;
+  top: 7px;
+  left: -20px;
+  text-align: center;
+  font-size: 13px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  line-height: 27px;
+  -ms-transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+.typing-cursor {
+  color: white !important;
+}
+
+.main-read {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  color: $textMediumGreyColor;
+  margin-top: 50px;
+  // transform: translateX(20vw);
+}
+
+.main-scroll {
+  padding-top: 50px;
+  width: 75px;
+  height: 75px;
+}
+
+#navbar-logo {
+  max-width: 30px;
+  color: black;
+}
+
+.button:hover {
+  background-color:  $newPinkLogoColor;
+}
+
+xmp {
+  font-size: 20px;
+}
+
+#simplelink {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin: auto;
+  transition: color 0.25s;
+}
+
+#simplelink:hover {
+  color: $textLightGreyColor;
+}
+
+.simple-link {
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  color: $textMediumGreyColor;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 15px;
+}
+
+.electron {
+  font-family: 'Lato', sans-serif;
+  color: $textMediumGreyColor;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 15px;
+  color: white;
+}
+
+
+#front-page {
+  color: white;
+}
+
+#front-page:hover {
+  color: $textLightGreyColor;
+}
+
+/*** Landing Page ***/
+
+#landing-page-center-title {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  font-weight: medium;
+  padding-top: 100px;
+}
+
+#landing-page-motto {
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 0px;
+  font-size: 1.5em;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.get-started-button-wrapper {
+  text-align: center;
+  padding-top: 3vh;
+  margin: auto;
+
+  button {
+    width: 200px;
+    height: 60px;
+    padding: 12px 32px;
+    font-size: 1.5em;
+    margin: 0px 0px 20px 0px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: $textDarkGreyColor;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.19); /* light gray */
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: $textLightGreyColor;
+  }
+}
+
+#highlights {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.highlight-card {
+  margin: auto;
+  padding: 50px 0px 50px 0px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  border-bottom: 1px solid lightgrey;
+  max-width: 900px;
+  width: 90%;
+}
+
+#friends-card {
+  max-width: 1000px;
+  width: 90%;
+}
+
+.highlight-img {
+  white-space: nowp;
+  height: 200px;
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #apple {
+    height: 180px;
+  }
+
+  #friends {
+    height: 180px;
+  }
+}
+
+.highlight-text {
+  text-align: left;
+  max-width: 60%;
+
+  h1 {
+    font-family: 'Lato', sans-serif;
+    color: $textDarkGreyColor;
+    font-size: 2em;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-family: 'Lato', sans-serif;
+    color: $textMediumGreyColor;
+    font-size: 1em;
+    font-weight: 300;
+  }
+
+}
+
+footer {
+  padding-top: 30px;
+  background-color:white;
+  width: 100%;
+  padding-bottom: 30px;
+
+  /* donate button */
+  button {
+    font-size: 1.0em;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: $textLightGreyColor;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.19); /* light gray */
+    transition: 0.6s;
+  }
+
+  .button-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  .version-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    // gives the version a little bit of padding away from image
+    p {
+      padding: 0.5em;
+    }
+
+  }
+
+  .open-source-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* this is here so that the Don't Trust Us text doesn't wrap plz don't remove */
+    white-space: nowrap;
+
+    .github {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    // if you make this a percentage it causes weird sizing problems when hovering
+    // over logo, don't know how to make responsive
+    #dont-trust {
+      padding: 10px;
+    }
+
+    svg:hover {
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: brightness(50%);
+    }
+  }
+
+  #feedback-link {
+    box-shadow: none;
+    background-color: none;
+    border-radius: none;
+    color: $textMediumGreyColor;
+    transition: color 0.3s;
+  }
+
+  #feedback-link:hover {
+    color: $textDarkGreyColor;
+  }
+
+  .donate-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a {
+      font-family: 'Lato', sans-serif;
+    }
+
+      /* donate button */
+      button {
+        font-size: 1.0em;
+        margin: 0px 10px 0px 10px;
+        padding: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+        color: $iMessageGrayTextColor;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.19); /* light gray */
+        transition: 0.6s;
+      }
+
+      button:hover {
+        background-color: $textLightGreyColor;
+      }
+
+      a {
+        font-family: 'Lato', sans-serif;
+      }
+
+      p {
+        margin: 0;
+      }
+
+  }
+
+  div {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    color: $iMessageGrayTextColor;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    color: $iMessageGrayTextColor;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: $textDarkGreyColor;
+  }
+}
+
+/* Privacy Policy Styling */
+.pp-text {
+  text-align: left;
+  margin: 5% 5% 0% 5%;
+  border-bottom: 1px solid lightgrey;
+
+  h2 {
+    font-family: 'Lato', sans-serif;
+    color: $textMediumGreyColor;
+    font-size: 1em;
+    font-weight: 200;
+  }
+
+  span {
+    color: $textDarkGreyColor;
+  }
+}
+
+
+.pp-title {
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.privacyPolicyHeader {
+  h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: $textDarkGreyColor;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
+#main {
+  height: 100%;
+}
+
+.all-container {
+  height: 100%;
+}
+
+/* Blog Styling */
+.blog-wrapper {
+  height: 100%;
+}
+
+.blog-text {
+  text-align: left;
+  margin: 5% 5% 0% 5%;
+  border-bottom: 1px solid lightgrey;
+  height: 80%;
+  h2 {
+    font-family: 'Lato', sans-serif;
+    color: $textMediumGreyColor;
+    font-size: 1em;
+    font-weight: 200;
+  }
+
+  span {
+    color: $textDarkGreyColor;
+  }
+}
+
+
+.blog-title {
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.blog-header {
+  h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: $textDarkGreyColor;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .footer-container {
+    flex-flow: row wrap;
+    justify-content: center;
+
+
+    .open-source-container {
+      padding-bottom: 10px;
+      align-items: center;
+      width: 100%;
+    }
+
+    .donate-container {
+      padding-bottom: 10px;
+      align-items: center;
+      width: 100%;
+    }
+
+    .feedback-container {
+      text-align: center;
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    #feedback-link {
+      margin: 0;
+    }
+  }
+}
+@media only screen and (max-width: 640px) {
+
+  .highlight-card {
+    justify-content: center;
+    padding: 30px 0 30px 0;
+    width: 95%;
+  }
+
+  .highlight-text {
+    max-width: 80%;
+  }
+
+  .footer-container {
+    flex-flow: row wrap;
+    justify-content: center;
+
+
+    .open-source-container {
+      padding-bottom: 10px;
+      align-items: center;
+      width: 100%;
+    }
+
+    .donate-container {
+      padding-bottom: 10px;
+      align-items: center;
+      width: 100%;
+    }
+
+    .feedback-container {
+      text-align: center;
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    #feedback-link {
+      margin: 0;
+    }
+  }
+}

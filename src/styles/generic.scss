@@ -1,0 +1,57 @@
+$newBlueLogoColor: #8CD1C6;
+$newPinkLogoColor: #ffaec6;
+
+$pink: #FD7EA3;
+$white: #FFF3F7;
+$blue: #DEF8FF;
+$green: #91D7CD;
+
+@font-face {
+  font-family: "Gothvetica";
+  src: url("../fonts/Gothvetica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Simplifica";
+  src: url("../fonts/Simplifica.ttf") format("truetype");
+}
+
+.account-actions {
+  font-size: 3.5vh;
+  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  top: 3vh;
+  right: 2vw;
+  display: flex;
+  z-index: 100;
+}
+
+.account-action {
+  text-decoration: none;
+  margin-left: 2.5vw;
+}
+
+.account-action:visited {
+  text-decoration: none;
+}
+
+.account-login {
+  color: $green;
+}
+
+.account-login:after {
+  background: $pink !important;
+}
+
+.account-signup {
+  color: $green;
+}
+
+.account-signup:after {
+  background: $pink !important;
+}
+
+.account-in {
+  font-size: 3.5vh;
+  font-family: 'Quicksand', sans-serif;
+}

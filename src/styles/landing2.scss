@@ -1,0 +1,217 @@
+$iMessageBlueLogoColor: #3399ff;
+$iMessageGrayTextColor: #999999;
+$iMessageDarkBlueLogoColor: #006699;
+$iMessageWhiteLogoColor: #ccffff;
+$textGreenColor: #4DE52E;
+$textBackgroundColor: #ffffff;
+$textDarkGreyColor: rgb(88, 88, 88);
+$textMediumGreyColor: rgb(158, 158, 158);
+$textLightGreyColor: rgb(228, 228, 228);
+$NavLinkColor: rgb(66, 66, 66);
+
+$newBlueLogoColor: #8CD1C6;
+$newPinkLogoColor: #ffaec6;
+
+$pink: #FD7EA3;
+$white: #FFF3F7;
+$blue: #DEF8FF;
+$green: #91D7CD;
+
+@font-face {
+  font-family: "Gothvetica";
+  src: url("../fonts/Gothvetica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Simplifica";
+  src: url("../fonts/Simplifica.ttf") format("truetype");
+}
+
+.pink-text {
+  color: $pink;
+}
+
+.white-text {
+  color: $white;
+}
+
+.blue-text {
+  color: $blue;
+}
+
+.smaller-title-text {
+  font-size: 5vh;
+}
+
+#landing {
+  height: 500vh;
+  background-color: #DEF8FF;
+  margin: 0;
+}
+
+#landing-back {
+  position: relative;
+  margin: 0;
+  margin-top: 50vh;
+  height: 120%;
+  width: 100%;
+}
+
+#landing-content {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.landing-title {
+  position: absolute;
+  top: 25vh;
+  margin-left: 1.5vw;
+  // left: 10vw;
+  font-family: 'Simplifica';
+  font-size: 20vh;
+  font-weight: bold;
+  letter-spacing: 1vw;
+  color: #FD7EA3;
+
+  #landing-on {
+    // font-style: italic;
+    font-size: 12vh;
+  }
+
+  #landing-space {
+    font-size: 0px;
+  }
+}
+
+.landing-subtitle {
+  color: #91D7CD;
+  position: absolute;
+  top: 47vh;
+  // left: 10vw;
+  font-size: 4.5vh;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.landing-sect {
+  height: 150vh;
+  width: 100vw;
+  margin: 0;
+
+  .landing-rect {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.landing-started {
+  position: absolute;
+  top: 52vh;
+  // left: 10vw;
+  padding-top: 3vh;
+
+  button {
+    width: 200px;
+    height: 60px;
+    padding: 12px 32px;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #FFF3F7;
+    background-color: #91D7CD;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.19); /* light gray */
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: $textLightGreyColor;
+  }
+}
+
+.landing-section-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-section {
+  height: 100%;
+  width: 100%;
+}
+
+.landing-section-title {
+  position: relative;
+  font-family: 'Simplifica';
+  font-size: 8vh;
+  font-weight: bold;
+  letter-spacing: 1vw;
+
+  span {
+    position: relative;
+  }
+}
+
+.landing-section-content {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3.8vh;
+  letter-spacing: normal;
+  font-weight: normal;
+}
+
+
+#landing-info {
+  color: #FFF3F7;
+
+  .landing-section-title {
+    margin-top: 8vh;
+    margin-left: 7vw;
+  }
+
+  .landing-section-content {
+    margin-top: 3vh;
+    margin-left: 7vw;
+    width: 75vw;
+    font-size: 3.8vh;
+  }
+}
+
+#landing-data {
+  overflow-x: hidden;
+
+  .landing-section-title {
+    margin-top: 23vh;
+  }
+
+  .landing-section-content {
+    margin-top: 3vh;
+    margin-left: 7vw;
+    width: 75vw;
+  }
+}
+
+.explosion-grid {
+  display: flex;
+  justify-content: space-between;
+  width: 26vw;
+  height: 26vw;
+  margin-left: 35vw;
+  margin-top: 5vh;
+}
+
+.explosion-col {
+  flex: 1;
+}
+
+.explosion-box {
+  height: 6vw;
+  width: 6vw;
+  border-radius: 1px;
+}

@@ -1,0 +1,79 @@
+$pink: #FD7EA3;
+$white: #FFF3F7;
+$blue: #DEF8FF;
+$green: #91D7CD;
+
+
+.dashboard-container {
+  margin: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.dashboard-sidebar {
+  background-color: #DDF8E8;
+  height: 100%;
+  width: 250px;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-sidebar-item {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 'Medium';
+  font-size: 26px;
+
+  transition: background-color 0.5s ease;
+  outline: none;
+}
+
+.dashboard-sidebar-item:hover {
+  cursor: pointer;
+  background-color: $pink;
+}
+
+.dashboard-sidebar-selected {
+  background-color: $pink;
+}
+
+.dashboard-sidebar-item:first-of-type {
+  margin-top: 12vh;
+}
+
+.dashboard-sidebar-item:last-of-type {
+  border-bottom: 1px solid black;
+}
+
+.dashboard-signed {
+  width: 100%;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 'Medium';
+  font-size: 18px;
+
+  span {
+    font-size: 14px;
+    margin-bottom: 2vh;
+  }
+}
+
+.dashboard-content {
+  height: 100%;
+  width: 100%;
+
+  overflow-y: scroll;
+}
+
+.BinaryFeedback__container {
+  margin-top: -10px;
+}

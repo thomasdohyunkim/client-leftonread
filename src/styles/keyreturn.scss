@@ -1,0 +1,45 @@
+$iMessageBlueLogoColor: #3399ff;
+$iMessageGrayTextColor: #999999;
+$iMessageDarkBlueLogoColor: #006699;
+$iMessageWhiteLogoColor: #ccffff;
+$textGreenColor: #4DE52E;
+$textBackgroundColor: #ffffff;
+$textDarkGreyColor: rgb(88, 88, 88);
+$textMediumGreyColor: rgb(158, 158, 158);
+$textLightGreyColor: rgb(228, 228, 228);
+$NavLinkColor: rgb(66, 66, 66);
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Lato');
+}
+
+/** Key Return **/
+.keyreturn-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $textBackgroundColor;
+
+  .keyreturn-instructions {
+    padding: 20px 0px 0px 0px;
+    max-width: 500px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: $iMessageGrayTextColor;
+  }
+
+  input {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  #first-input {
+    margin-top: 40px;
+  }
+}

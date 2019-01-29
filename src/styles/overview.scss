@@ -1,0 +1,423 @@
+$iMessageBlueLogoColor: #3399ff;
+$iMessageGrayTextColor: #999999;
+$iMessageDarkBlueLogoColor: #006699;
+$iMessageWhiteLogoColor: #ccffff;
+$buttonHoverColor: rgb(29, 211, 255);
+$textGreenColor: #4DE52E;
+$textBackgroundColor: #ffffff;
+$textDarkGreyColor: rgb(88, 88, 88);
+$textMediumGreyColor: rgb(158, 158, 158);
+$textLightGreyColor: rgb(228, 228, 228);
+$FilterLightGrey: #f6f6f6;
+$NavLinkColor: rgb(66, 66, 66);
+
+// TODO: get this font working...
+// @font-face {
+//   font-family: BigNoodleTitling;
+//   src: url('../fonts/bigNoodleTitling.ttf');
+// }
+
+/*** Graph ***/
+.overview {
+  display: flex;
+  flex-direction: row;
+  background: #DEF8FF;
+  font-family: 'Lato', sans-serif;
+}
+
+.overview-side {
+  width: 250px;
+  max-width: 250px;
+  min-width: 250px;
+  height: 100%;
+  background-color: #DEE7E7;
+
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .instance-key {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+
+    span {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  .overview-menu-header {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .menu-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu-item {
+    width: 100%;
+    border-color: #3399FF;
+    border-style: solid;
+    border-width: 0 0 0.5px 0;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.7px;
+
+    .menu-title {
+      margin: auto;
+    }
+
+
+    .menu-indicator {
+      width: 8px;
+      background-color: #DEE7E7;
+    }
+  }
+
+  .menu-item-selected {
+    color: white;
+    background-color: #3399FF;
+
+    .menu-indicator {
+      float: left;
+      width: 8px;
+      height: calc(100% - 0.5px);
+      background-color: white;
+    }
+  }
+
+  .menu-item:first-child {
+    border-top-width: 0.5px;
+  }
+
+  .menu-item:focus {
+    outline: none;
+  }
+}
+
+.overview-user-title {
+  color: #fd7ea3;
+  font-family: 'Lato';
+  font-size: 36px;
+  letter-spacing: 0.0625em;
+  font-weight: bold;
+}
+
+.overview-tooltip {
+  background-color: $textDarkGreyColor;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.home-button {
+  text-decoration: none;
+}
+
+.overview-lor-title  {
+  position: relative;
+  margin: 0;
+  left: 40px;
+  top: -33px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  color: $iMessageBlueLogoColor;
+  text-decoration: none;
+}
+
+.overview-main {
+  flex-grow: 1;
+  height: 100%;
+
+  .overview-toolbar {
+    // display: flex;
+    // align-items: baseline;
+    // justify-content: space-around;
+    height: 100px;
+    }
+
+    .overview-feedback {
+      align-items: right;
+    }
+
+    .overview-instance {
+      font-family: 'Lato', sans-serif;
+      padding-top: 60px;
+      padding-bottom: 20px;
+      font-size: 18px;
+      color: $textDarkGreyColor;
+      margin: auto;
+      max-width: 500px;
+      text-align: center;
+    }
+
+      span {
+        font-weight: bolder;
+      }
+
+
+  .overview-graphs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    border-bottom: 1px solid lightgrey;
+  }
+
+}
+
+.overview-graphs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.overview-tabs {
+  padding: 20px 50px 0px 50px;
+}
+/*** Card Wrapper **/
+.card-wrapper {
+  transition: width 0.5s;
+  width: 40%;
+  text-align: center;
+  margin: 30px;
+
+  &:hover {
+    // transition: box-shadow 0.5s;
+    // box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    // cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  h1 {
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+.card-big {
+  width: 80%;
+  height: 50vh;
+  margin: auto;
+  margin: 0px 20px 20px 20px;
+}
+
+/*** Graph Component Wrapper ***/
+.graph-component-wrapper {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  margin: 30px;
+  margin-bottom: 5px;
+
+  .graph-component-header {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    color: $textDarkGreyColor;
+
+    .graph-component-header-title {
+      margin: auto;
+      padding-left: 32px;
+    }
+
+    .graph-component-header-actions {
+      float: right;
+      display: flex;
+      align-items: center;
+
+      svg {
+        height: 20px;
+        width: 20px;
+      }
+
+      svg:hover {
+        cursor: pointer;
+      }
+
+      .share-icon-div {
+        display: flex;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .graph-component-help {
+    float: right;
+  }
+}
+
+/*** Graph Component ***/
+.graph-component {
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+}
+
+.graph-modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.graph-description {
+  font-family: 'Lato', sans-serif;
+
+}
+
+.gc-search {
+  flex-direction: column;
+}
+
+
+.graph-button {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px;
+  margin: 0px 10px 0px 10px;
+  border-radius: 5px;
+  background-color: $textLightGreyColor;
+}
+
+.graph-button:focus {
+  outline: none;
+}
+
+
+.Collapsible {
+  position: absolute;
+  background-color:#FFAEC6;;
+  border-radius: 25px;
+  right: 5%;
+  z-index: 1;
+
+}
+
+.Collapsible:hover{
+  cursor: pointer;
+}
+
+
+//The content within the collaspable area
+.Collapsible__contentInner {
+  border: 0;
+  border-radius: 25px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background-color: #FFAEC6;
+  background: #FFAEC6;
+
+  p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+//The link which when clicked opens the collapsable area
+.Collapsible__trigger {
+  display: block;
+  font-weight: 400;
+  border-radius: 25px;
+  text-decoration: none;
+  color: grey;
+  position: relative;
+  padding: 10px 10px 10px 20px;
+  background-color:#FFAEC6;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+
+
+  &:after {
+    font-family: 'Lato', sans-serif;
+    content: '▼';
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+    background-color:#FFAEC6;
+
+  }
+
+
+  &.is-open {
+    &:after {
+      transform: rotateZ(180deg);
+    }
+
+    ~.Collapsible__contentOuter {
+      overflow: visible !important;
+      border-radius: 25px;
+      .Collapsible__contentInner {
+        opacity: 1;
+      }
+    }
+
+  }
+
+  &.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+  }
+}
+
+.CustomTriggerCSS {
+  background-color: lightcoral;
+  transition: background-color 200ms ease;
+
+
+}
+
+.CustomTriggerCSS--open {
+  background-color:#FFAEC6;
+}
+
+.Collapsible__custom-sibling {
+  padding: 5px;
+  font-size: 12px;
+  background-color: #CBB700;
+  color: black;
+}

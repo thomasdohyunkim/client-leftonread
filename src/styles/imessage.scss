@@ -1,0 +1,100 @@
+$iMessageBlueLogoColor: #3399ff;
+$iMessageGrayTextColor: #E5E5EA;
+$iMessageDarkBlueLogoColor: #006699;
+$iMessageWhiteLogoColor: #ccffff;
+$textGreenColor: #4DE52E;
+$textBackgroundColor: #ffffff;
+
+// /* writer */
+// .writing {
+//   display: block;
+//   height: 20px;
+//   width: 50px;
+//   background-color: #E5E5EA;
+//   border-radius: 25px;
+// }
+//
+// .writing .dot {
+//   height: 15px;
+//   width: 15px;
+//   background-color: #aaa;
+//   opacity: 0.3;
+//   border-radius: 50%;
+//   position: relative;
+//   -webkit-animation: dots .9s ease-in-out infinite;
+//   animation: dots .9s ease-in-out infinite;
+// }
+//
+// .writing .dot.left {
+//   top: 3px;
+//   margin-left: 2px;
+// }
+// .writing .dot.center {
+//   top: -12px;
+//   left: 20px;
+//   -webkit-animation-delay: 0.3s;
+// }
+// .writing .dot.right {
+//   top:  -27px;
+//   left: 38px;
+//   -webkit-animation-delay: 0.6s;
+// }
+// @-webkit-keyframes dots {
+//   0% {
+//     opacity: 1; } }
+// @keyframes dots {
+//   0% {
+//     opacity: 1; }
+// }
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+.messages-container {
+  height: calc(100vh - 55px);
+  max-height: 100%;
+}
+
+.launcher.hide-sm {
+  display: none;
+}
+
+.conversation-container {
+  box-shadow: 0px 0px 0px 0px;
+
+  .header {
+    display: none;
+  }
+
+  .send-icon {
+    display: none;
+  }
+}
+
+.widget-container {
+  all: initial;
+  font-family: 'Roboto', sans-serif;
+}
+
+.imessage-time{
+  margin: auto;
+  color: grey;
+}
+
+.message {
+  .client {
+    color: white;
+    background-color: $iMessageBlueLogoColor;
+    max-width: 100px;
+  }
+
+  .response {
+    color: black;
+    background-color: $iMessageGrayTextColor;
+    max-width: 400px;
+  }
+}
+
+.new-message {
+  background-color: white;
+  border-radius: 15px;
+}

@@ -1,0 +1,141 @@
+$iMessageBlueLogoColor: #3399ff;
+$iMessageGrayTextColor: #999999;
+$iMessageDarkBlueLogoColor: #006699;
+$iMessageWhiteLogoColor: #ccffff;
+$textGreenColor: #4DE52E;
+$textBackgroundColor: #ffffff;
+$textDarkGreyColor: rgb(88, 88, 88);
+$textMediumGreyColor: rgb(158, 158, 158);
+$textLightGreyColor: rgb(228, 228, 228);
+$NavLinkColor: rgb(66, 66, 66);
+
+$pink: #FD7EA3;
+$white: #FFF3F7;
+$blue: #DEF8FF;
+$green: #91D7CD;
+
+@font-face {
+  font-family: "Gothvetica";
+  src: url("../fonts/Gothvetica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Simplifica";
+  src: url("../fonts/Simplifica.ttf") format("truetype");
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius:  4px;
+  outline: none;
+  padding: 20px;
+  display: block;
+  height: 300px;
+}
+
+.modals-uploads-page-contacts, .modals-share-URL
+ {
+  height: 400px;
+  width: 600px;
+  font-family: 'Lato', sans-serif;
+
+  .share-instructions {
+    text-align: center;
+    padding: 20%;
+  }
+}
+
+.modals-uploads-page-password {
+  height: 275px;
+  width: 600px;
+  font-family: 'Lato', sans-serif;
+}
+
+.modals-uploads-page-loading {
+  height: 50px;
+  width: 300px;
+  font-family: 'Lato', sans-serif;
+}
+
+.modal-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modals-uploads-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  .modal-title {
+    font-size: 30px;
+  }
+
+  #model-dropzone{
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .modal-help {
+    font-weight: 200;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .modal-close {
+    margin-right: 50px;
+    background-color: #ff8282;
+  }
+
+  .model-close:hover {
+    background-color: #fe1e1e;
+  }
+
+  input {
+    padding: 10px;
+    width: 300px;
+    margin: 20px 20px 20px 0px;
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+.mobile-modal {
+  width: auto !important;
+  height: auto !important;
+}
+
+.modal-resp {
+  border-radius: 10px;
+
+  svg:hover {
+    cursor: pointer;
+  }
+}
+
+.modal-resp-title {
+  font-family: 'Simplifica';
+  font-size: 8vh;
+  letter-spacing: 3.3vh;
+}
+
+.modal-resp-authed {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.7vh;
+}
+
+.modal-resp-already-auth {
+  margin-top: 3vh;
+}
+
+.modal-resp-logout {
+  margin-top: 1.5vh;
+}

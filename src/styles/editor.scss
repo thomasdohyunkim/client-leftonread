@@ -1,0 +1,151 @@
+$newBlueLogoColor: #8CD1C6;
+$newPinkLogoColor: #ffaec6;
+
+$pink: #FD7EA3;
+$white: #FFF3F7;
+$blue: #DEF8FF;
+$green: #91D7CD;
+
+@font-face {
+  font-family: "Gothvetica";
+  src: url("../fonts/Gothvetica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Simplifica";
+  src: url("../fonts/Simplifica.ttf") format("truetype");
+}
+
+.user-required-star {
+  font-family: 'Quicksand', sans-serif;
+  color: red;
+}
+
+.user-field-title {
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  line-height:15px;
+  font-size: 3vh;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.user-field-input {
+  height: 4.5vh;
+  width: 35vw;
+  line-height:15px;
+  margin-top: 2px;
+  outline: 0 none;
+  background-color: white;
+  font-size: 2.5vh;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.user-field-helper {
+  font-size: 2.5vh;
+  font-family: 'Quicksand', sans-serif;
+  color: grey;
+  margin-bottom: 2vh;
+}
+
+.user-field-button {
+  height: 8vh;
+  width: 11vw;
+  font-size: 3.5vh;
+  font-family: 'Quicksand', sans-serif;
+  background-color: white;
+  color: black;
+  border: 1px solid #D3D3D3;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  align-self: center;
+}
+
+.user-editor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.signup-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: $blue;
+}
+
+.signup-container {
+  height: 100vh;
+  width: 50vw;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  a:visited {
+    color: black;
+  }
+}
+
+.signup-title {
+  margin-top: 12vh;
+  margin-left: 2.2vw;
+  font-family: 'Simplifica';
+  font-size: 14vh;
+  font-weight: 900;
+  letter-spacing: 1vw;
+}
+
+.signup-info {
+  background-color: $pink;
+}
+
+.signup-editor {
+  background-color: $blue;
+}
+
+#signup-signup {
+  color: $pink;
+}
+
+#signup-why {
+  color: $blue;
+}
+
+#signup-button {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.19); /* light gray */
+}
+
+#signup-button:hover {
+  background-color: $pink;
+  cursor: pointer;
+}
+
+.signup-why-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 45vw;
+  font-family: 'Quicksand', sans-serif;
+  height: 90%;
+  margin-bottom: 10%;
+}
+
+.signup-why-title {
+  font-size: 3.5vh;
+  font-weight: 500;
+}
+
+.signup-why-content {
+  font-size: 2.5vh;
+}
+
+.signup-already {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2vh;
+}
+
+.signup-already:after {
+  background: $pink !important;
+}

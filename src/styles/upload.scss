@@ -1,0 +1,132 @@
+$pink: #FD7EA3;
+$white: #FFF3F7;
+$blue: #DEF8FF;
+$green: #91D7CD;
+
+@font-face {
+  font-family: "Gothvetica";
+  src: url("../fonts/Gothvetica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Simplifica";
+  src: url("../fonts/Simplifica.ttf") format("truetype");
+}
+
+.upload-progress {
+  width: 60vw;
+}
+
+.instance-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.instance-modal-title, .link-modal-title {
+  font-family: 'Simplifica';
+  font-size: 8vh;
+  letter-spacing: 1vh;
+  margin-left: 1vh;
+}
+
+.link-modal-title {
+  color: green;
+}
+
+.instance-modal-warning {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.5vh;
+  color: red;
+}
+
+.instance-modal-success {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.5vh;
+  color: green;
+}
+
+.instance-modal-pct {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2vh;
+}
+
+.instance-modal-link {
+  align-self: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3vh;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.instance-modal-logged {
+  font-size: 3.7vh;
+  margin-top: 5vh;
+  margin-bottom: 4vh;
+
+  div {
+    margin-bottom: 3vh;
+  }
+}
+
+.instance-modal-finish-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instance-modal-not-you {
+  font-size: 3.3vh;
+}
+
+.instance-modal-stalled {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2vh;
+  color: grey;
+}
+
+.instance-modal-finish-button {
+  background-color: $green;
+}
+
+.instance-modal-finish-button:hover {
+  background-color: $pink;
+}
+
+.link-modal-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-modal-instructions {
+  margin-top: 2vh;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.5vh;
+}
+
+.upload-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 18vw;
+
+  div {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.2vh;
+  }
+}
+
+.upload-button {
+  background-color: $green;
+  width: 17vw;
+}
+
+.upload-button:hover {
+  background-color: $pink;
+}

@@ -1,0 +1,80 @@
+$iMessageBlueLogoColor: #3399ff;
+$iMessageGrayTextColor: #999999;
+$iMessageDarkBlueLogoColor: #006699;
+$iMessageWhiteLogoColor: #ccffff;
+$buttonHoverColor: rgb(29, 211, 255);
+$textGreenColor: #4DE52E;
+$textBackgroundColor: #ffffff;
+$textDarkGreyColor: rgb(88, 88, 88);
+$textMediumGreyColor: rgb(158, 158, 158);
+$textLightGreyColor: rgb(228, 228, 228);
+$FilterLightGrey: #f6f6f6;
+$NavLinkColor: rgb(66, 66, 66);
+
+.react-tabs {
+  &__tab-list {
+    display: flex;
+    margin: 0 0 10px;
+    padding-top: 30px;
+    justify-content: center;
+  }
+
+  &__tab {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #60d3d8; // text color of each tab. TODO: get actual color
+    display: inline-block;
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 12px 40px;
+    cursor: pointer;
+    transition: border-top 0.3s, border-left 0.3s, border-right 0.3s;
+
+    &--selected {
+      color: #e67097;
+      // background: #fff;
+
+      // border-top: 3px solid $iMessageBlueLogoColor;
+      // border-left: 1px solid $textLightGreyColor;
+      // border-right: 1px solid $textLightGreyColor;
+    }
+
+    // pass in as a prop
+
+    &--disabled {
+      color: red;
+      cursor: default;
+    }
+
+    &:focus {
+      // box-shadow: 0 0 5px hsl(208, 99%, 50%);
+      // border-color: hsl(208, 99%, 50%);
+      outline: none;
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        left: -4px;
+        right: -4px;
+        bottom: -5px;
+        background: #fff;
+      }
+    }
+  }
+
+  &__tab-panel {
+    display: none;
+
+    &--selected {
+      display: block;
+    }
+  }
+}
+
+.filterBar {
+  padding-top: 52px;
+}

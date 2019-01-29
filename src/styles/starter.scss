@@ -1,0 +1,119 @@
+$iMessageBlueLogoColor: #3399ff;
+$iMessageGrayTextColor: #999999;
+$iMessageDarkBlueLogoColor: #006699;
+$iMessageWhiteLogoColor: #ccffff;
+$textGreenColor: #4DE52E;
+$textBackgroundColor: #ffffff;
+$textDarkGreyColor: rgb(88, 88, 88);
+$textMediumGreyColor: rgb(158, 158, 158);
+$textLightGreyColor: rgb(228, 228, 228);
+$NavLinkColor: rgb(66, 66, 66);
+
+$newBlueLogoColor: #8CD1C6;
+$newPinkLogoColor: #ffaec6;
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Lato');
+}
+
+/** Nav **/
+
+nav {
+  background-color: white;
+  ul {
+    display: flex;
+  }
+  li {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    padding: 10px 0px 8px 0px;
+  }
+}
+
+/** Starter Page **/
+.starter-container {
+}
+
+.starter-header {
+  font-family: 'Quicksand', sans-serif;
+  color: $textDarkGreyColor;
+  font-size: 4em;
+  text-align: center;
+  font-weight: 400;
+  /* important this is margin and not padding, otherwise does not work on mobile */
+  margin-top: 100px;
+}
+
+/** Uploader **/
+.uploader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+
+  input {
+    padding: 10px;
+    width: 300px;
+    margin: 20px 20px 20px 0px;
+    font-family: 'Lato', sans-serif;
+    color: $textDarkGreyColor;
+  }
+
+  .copy-button {
+    padding: 10px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: $textBackgroundColor;
+    background-color: $newBlueLogoColor;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.19); /* light gray */
+    transition: background-color 0.3s;
+  }
+
+  .copy-button:hover {
+    background-color:  $newPinkLogoColor;
+  }
+}
+
+.uploader-instructions {
+  font-family: 'Lato', sans-serif;
+  color: $iMessageGrayTextColor;
+  padding: 10px 0px 20px 0px;
+  line-height: 25px;
+  b {
+    color: $textDarkGreyColor;
+  }
+}
+
+xmp {
+  color: $textDarkGreyColor;
+  background-color: $textLightGreyColor;
+  max-width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.uploader-dropzone {
+  background-color: $textLightGreyColor;
+  padding: 30px;
+  margin: 0px 0px 5px 0px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: $textDarkGreyColor;
+  font-family: 'Lato', sans-serif;
+  border-style: dashed;
+}
+
+
+.drop-active {
+  border: 4px dashed $textGreenColor;
+}
